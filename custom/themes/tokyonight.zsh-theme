@@ -1,15 +1,16 @@
 # Colors (Tokyo Night)
-local BLUE="%F{33}"     # #7aa2f7
-local CYAN="%F{81}"     # #7dcfff
-local MAGENTA="%F{141}" # #bb9af7
-local RED="%F{204}"     # #f7768e
-local GREEN="%F{113}"   # #9ece6a
-local YELLOW="%F{180}"  # #e0af68
-local MAUVE="%F{135}"   # #B577D9
+local BLUE="%F{33}"           # #7aa2f7
+local CYAN="%F{81}"           # #7dcfff
+local MAGENTA="%F{141}"       # #bb9af7
+local RED="%F{204}"           # #f7768e
+local GREEN="%F{113}"         # #9ece6a
+local YELLOW="%F{180}"        # #e0af68
+local MAUVE="%F{135}"         # #B577D9
+local GIT_GREEN="%F{#6AC418}" # 6AC418
 local RESET="%f%k"
 
 # Prompt structure
-PROMPT='${BLUE}%n${RESET}@${MAGENTA}%m ${CYAN}%~ ${GREEN}$(git_prompt_info)${RESET}
+PROMPT='${BLUE}%n${RESET}@${MAGENTA}%m ${CYAN}%~ ${GREEN}$(git_prompt_info)${GIT_GREEN}
 ❯ '
 
 # Git info (only if inside a git repo)
